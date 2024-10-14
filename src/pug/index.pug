@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Окна Family')
+  body
+    include components/header
+    main
+      .container
+        h3(style="margin-bottom: 24px; font-size: 32px; font-weight: 500") Регистрация / Авторизация
+        ul 
+          li 
+            a(href="reg.html" style="margin-bottom: 16px;") Регистрация
+          li 
+            a(href="auth.html" style="margin-bottom: 16px;") Авторизация
+          li 
+            a(href="set-password.html" style="margin-bottom: 16px;") Установите ваш пароль
+          li 
+            a(href="modals.html" style="margin-bottom: 16px;") Модалки
+    include components/footer
+    include includes/scripts

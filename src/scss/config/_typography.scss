@@ -1,0 +1,54 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.h1 {
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 500;
+  font-family: var(--font-title);
+
+  @include media(xxl) {
+    font-size: 56px;
+  }
+
+  @include media(lg) {
+    font-size: 48px;
+  }
+
+  @include media(md) {
+    font-size: 32px;
+  }
+}
+
+.h2 {
+  font-size: 50px;
+  line-height: 1;
+
+  @include media(lg) {
+    font-size: 40px;
+  }
+
+  @include media(md) {
+    font-size: 28px;
+  }
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+
+  @include media(lg) {
+    font-size: 28px;
+  }
+
+  @include media(md) {
+    font-size: 24px;
+  }
+}

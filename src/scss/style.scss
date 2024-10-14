@@ -1,0 +1,21 @@
+@import 'libs/swiper';
+
+//Config
+@import 'config/mixins';
+@import 'config/variables';
+@import 'config/reset';
+@import 'config/fonts';
+@import 'config/global';
+@import 'config/typography';
+@import 'config/form';
+@import 'config/common';
+
+//Components
+
+@import 'components/btn';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/modal';
+
+//Sections
+@import 'sections/auth';

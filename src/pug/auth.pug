@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Unio')
+  body
+    include components/header
+      main 
+        include sections/auth
+    include components/footer
+    include includes/scripts

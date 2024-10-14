@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Unio')
+  body
+    include components/header
+      main 
+        include sections/modals
+    include components/footer
+    include components/modals/reg-successful
+    include components/modals/email-exist
+    include components/modals/email-not-exist
+    include components/modals/password-changed
+    include components/modals/password-recovery
+    include components/modals/password-set
+    include includes/scripts

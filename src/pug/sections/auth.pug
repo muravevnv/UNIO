@@ -1,0 +1,78 @@
+section.auth 
+  .container.auth__content
+    .auth__main 
+      a.auth__logo(href="#") 
+        img(src="./img/logo.svg", alt="")
+      form.auth__form(action="#")
+        .auth__form-title Авторизация поставщика
+        .auth__form-inputs
+          .form-group.form-password 
+            label.form-label(for="") Логин
+            input.form-control(type="text" placeholder="Ваш E-mail") 
+            span.form-error Ошибка
+          .form-group.form-password(data-password="block")
+            label.form-label(for="") Пароль
+            input.form-control(type="password" placeholder="Ваша Фамилия" data-password="input") 
+            button(type="button" data-password="toggle").form-password__toggle
+            span.form-error Ваш пароль введен неверно
+        a(href="#").auth__form-password-recovery Восстановить пароль
+        .auth__form-controls 
+          bitton(type="submit").auth__form-btn.btn.btn--wide Войти в личный кабинет
+          a.auth__form-reg(href="#") Регистрация поставщика
+      .auth__support Обратиться в службу поддержки: 
+        a(href="mailto:info@unio.ru") info@unio.ru 
+    .auth__banner
+      .auth__banner-slider(data-slider="auth-banner")
+        .swiper-wrapper 
+          .auth__banner-slide.swiper-slide 
+            .auth__banner-slide-images 
+              picture.auth__banner-slide-img.auth__banner-slide-img--left 
+                source(srcset="./img/auth/banner-img-02.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-02.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-02.webp", alt="")
+              picture.auth__banner-slide-img
+                source(srcset="./img/auth/banner-img-01.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-01.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-01.webp", alt="")
+              picture.auth__banner-slide-img.auth__banner-slide-img--right
+                source(srcset="./img/auth/banner-img-03.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-03.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-03.webp", alt="")
+            .auth__banner-slide-info 
+              .auth__banner-slide-title Уведомления о несоответствиях
+              .auth__banner-slide-desc Подробная информация о несоответствии, включая возможные причины и последствия
+          .auth__banner-slide.swiper-slide 
+            .auth__banner-slide-images 
+              picture.auth__banner-slide-img.auth__banner-slide-img--left 
+                source(srcset="./img/auth/banner-img-02.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-02.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-02.webp", alt="")
+              picture.auth__banner-slide-img
+                source(srcset="./img/auth/banner-img-01.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-01.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-01.webp", alt="")
+              picture.auth__banner-slide-img.auth__banner-slide-img--right
+                source(srcset="./img/auth/banner-img-03.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-03.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-03.webp", alt="")
+            .auth__banner-slide-info 
+              .auth__banner-slide-title Уведомления о несоответствиях
+              .auth__banner-slide-desc Подробная информация о несоответствии, включая возможные причины и последствия
+          .auth__banner-slide.swiper-slide 
+            .auth__banner-slide-images 
+              picture.auth__banner-slide-img.auth__banner-slide-img--left 
+                source(srcset="./img/auth/banner-img-02.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-02.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-02.webp", alt="")
+              picture.auth__banner-slide-img
+                source(srcset="./img/auth/banner-img-01.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-01.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-01.webp", alt="")
+              picture.auth__banner-slide-img.auth__banner-slide-img--right
+                source(srcset="./img/auth/banner-img-03.webp" type="image/webp")
+                source(srcset="./img/auth/banner-img-03.jpg" type="image/jpg")
+                img(src="./img/auth/banner-img-03.webp", alt="")
+            .auth__banner-slide-info 
+              .auth__banner-slide-title Уведомления о несоответствиях
+              .auth__banner-slide-desc Подробная информация о несоответствии, включая возможные причины и последствия
+        .swiper-pagination

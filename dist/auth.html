@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Unio</title>
+    </head>
+  <body>
+    <main> 
+      <section class="auth"> 
+        <div class="container auth__content">
+          <div class="auth__main"> <a class="auth__logo" href="#"> <img src="./img/logo.svg" alt=""></a>
+            <form class="auth__form" action="#">
+              <div class="auth__form-title">Авторизация поставщика</div>
+              <div class="auth__form-inputs">
+                <div class="form-group form-password"> 
+                  <label class="form-label" for="">Логин</label>
+                  <input class="form-control" type="text" placeholder="Ваш E-mail"><span class="form-error">Ошибка</span>
+                </div>
+                <div class="form-group form-password" data-password="block">
+                  <label class="form-label" for="">Пароль</label>
+                  <input class="form-control" type="password" placeholder="Ваша Фамилия" data-password="input">
+                  <button class="form-password__toggle" type="button" data-password="toggle"></button><span class="form-error">Ваш пароль введен неверно</span>
+                </div>
+              </div><a class="auth__form-password-recovery" href="#">Восстановить пароль</a>
+              <div class="auth__form-controls"> 
+                <bitton class="auth__form-btn btn btn--wide" type="submit">Войти в личный кабинет</bitton><a class="auth__form-reg" href="#">Регистрация поставщика</a>
+              </div>
+            </form>
+            <div class="auth__support">Обратиться в службу поддержки: <a href="mailto:info@unio.ru">info@unio.ru </a></div>
+          </div>
+          <div class="auth__banner">
+            <div class="auth__banner-slider" data-slider="auth-banner">
+              <div class="swiper-wrapper"> 
+                <div class="auth__banner-slide swiper-slide"> 
+                  <div class="auth__banner-slide-images"> 
+                    <picture class="auth__banner-slide-img auth__banner-slide-img--left"> 
+                      <source srcset="./img/auth/banner-img-02.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-02.jpg" type="image/jpg"><img src="./img/auth/banner-img-02.webp" alt="">
+                    </picture>
+                    <picture class="auth__banner-slide-img">
+                      <source srcset="./img/auth/banner-img-01.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-01.jpg" type="image/jpg"><img src="./img/auth/banner-img-01.webp" alt="">
+                    </picture>
+                    <picture class="auth__banner-slide-img auth__banner-slide-img--right">
+                      <source srcset="./img/auth/banner-img-03.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-03.jpg" type="image/jpg"><img src="./img/auth/banner-img-03.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="auth__banner-slide-info"> 
+                    <div class="auth__banner-slide-title">Уведомления о несоответствиях</div>
+                    <div class="auth__banner-slide-desc">Подробная информация о несоответствии, включая возможные причины и последствия</div>
+                  </div>
+                </div>
+                <div class="auth__banner-slide swiper-slide"> 
+                  <div class="auth__banner-slide-images"> 
+                    <picture class="auth__banner-slide-img auth__banner-slide-img--left"> 
+                      <source srcset="./img/auth/banner-img-02.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-02.jpg" type="image/jpg"><img src="./img/auth/banner-img-02.webp" alt="">
+                    </picture>
+                    <picture class="auth__banner-slide-img">
+                      <source srcset="./img/auth/banner-img-01.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-01.jpg" type="image/jpg"><img src="./img/auth/banner-img-01.webp" alt="">
+                    </picture>
+                    <picture class="auth__banner-slide-img auth__banner-slide-img--right">
+                      <source srcset="./img/auth/banner-img-03.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-03.jpg" type="image/jpg"><img src="./img/auth/banner-img-03.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="auth__banner-slide-info"> 
+                    <div class="auth__banner-slide-title">Уведомления о несоответствиях</div>
+                    <div class="auth__banner-slide-desc">Подробная информация о несоответствии, включая возможные причины и последствия</div>
+                  </div>
+                </div>
+                <div class="auth__banner-slide swiper-slide"> 
+                  <div class="auth__banner-slide-images"> 
+                    <picture class="auth__banner-slide-img auth__banner-slide-img--left"> 
+                      <source srcset="./img/auth/banner-img-02.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-02.jpg" type="image/jpg"><img src="./img/auth/banner-img-02.webp" alt="">
+                    </picture>
+                    <picture class="auth__banner-slide-img">
+                      <source srcset="./img/auth/banner-img-01.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-01.jpg" type="image/jpg"><img src="./img/auth/banner-img-01.webp" alt="">
+                    </picture>
+                    <picture class="auth__banner-slide-img auth__banner-slide-img--right">
+                      <source srcset="./img/auth/banner-img-03.webp" type="image/webp">
+                      <source srcset="./img/auth/banner-img-03.jpg" type="image/jpg"><img src="./img/auth/banner-img-03.webp" alt="">
+                    </picture>
+                  </div>
+                  <div class="auth__banner-slide-info"> 
+                    <div class="auth__banner-slide-title">Уведомления о несоответствиях</div>
+                    <div class="auth__banner-slide-desc">Подробная информация о несоответствии, включая возможные причины и последствия</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

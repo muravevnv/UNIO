@@ -1,0 +1,44 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: auto; 
+  padding: 16px 40px;
+  border: 1px solid cl(primary);
+  background-color: cl(primary);
+  color: cl(whte);
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .25s ease-in-out;
+
+  svg {
+    color: cl(whte);
+  }
+
+  @media(any-hover: hover) {
+    &:hover {
+      background-color: cl(primary-hover);
+      border-color: cl(primary-hover);
+      color: cl(whte);
+
+      svg {
+        color: cl(whte);
+      }
+    }
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--gray {
+    background-color: var(--color-gray);
+    border-color: var(--color-gray);
+    color: var(--color-dark);
+  }
+}

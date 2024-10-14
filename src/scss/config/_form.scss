@@ -1,0 +1,125 @@
+.form {
+  &-group {
+    width: 100%;
+    position: relative;
+
+    //Класс для валидации, добавляется для <div class="form-group">...</div>
+
+    &.is-error {
+
+      .form-error {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .form-control {
+        border-color: var(--color-red);
+        color: var(--color-red);
+      }
+
+      .form-label {
+        color: var(--color-red);
+      }
+    }
+  }
+
+  &-error {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--color-red);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+
+    span {
+      color: var(--color-red);
+    }
+  }
+
+  &-control {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: 400;
+    padding: 16px 24px;
+    height: 56px;
+    border: 1px solid cl(border);
+    background-color: cl(whte);
+    color: cl(blck);
+    border-radius: 4px;
+    outline: none;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.2;
+      color: cl(alt);
+    }
+
+    &:focus::placeholder {
+      display: none;
+    }
+
+    &:focus {
+      border-color: cl(blck);
+    }
+
+    &--gray {
+      background-color: #F2F2F2;
+      border: 1px solid #F2F2F2;
+      color: cl(blck);
+
+
+    }
+    
+    &.is-error {
+      border-color: var(--color-red);
+    }
+  }
+
+  &-password {
+    position: relative;
+
+    &__toggle {
+      --size: 20px;
+      --icon: url('../img/icons/eye-throw.svg');
+      position: absolute;
+      right: 24px;
+      bottom: 18px;
+
+      width: var(--size);
+      height: var(--size);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+
+      &::before {
+        content: '';
+        width: var(--size);
+        height: var(--size);
+        display: block;
+        background-color: cl(alt);
+        mask: var(--icon) center center / contain no-repeat;
+        -webkit-mask: var(--icon) center center / contain no-repeat;
+      }
+
+      &.is-active {
+
+        &::before { 
+          --icon: url('../img/icons/eye.svg');
+        }
+      }
+    }
+  }
+}

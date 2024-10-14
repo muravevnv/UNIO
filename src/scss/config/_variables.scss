@@ -1,0 +1,30 @@
+$colors: (
+  "whte": #fff,
+  "blck": #252527,
+  "dark": #4F5763,
+  "alt": #B9C3CC,
+  "primary": #0048A6,
+  "primary-hover": #003983,
+  "primary-light": #466da1,
+  "gray": #E7EBED,
+  "disabled": #B8C3D1,
+  "border": #B9C3CC,
+  "red": #DC2626,
+  "blue": #17A1E0,
+);
+
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+      --color-#{$key}--rgb: #{hextorgb($value)};
+    }
+  }
+  --container-width: 1920px;
+  --container-pad: 20px;
+  --font-main: "BrutalType", sans-serif;
+  --font-title: "BrutalType", sans-serif;
+  --font-size: 16px;
+  --transition: 0.3s ease-in-out;
+}

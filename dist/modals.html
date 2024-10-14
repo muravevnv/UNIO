@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Unio</title>
+    </head>
+  <body>
+    <main> 
+      <section class="modals"> 
+        <div class="container"> 
+          <button class="btn" type="button" data-modal-target="reg-successful">Успешная регистация</button>
+          <button class="btn" type="button" data-modal-target="password-set">Пароль успешно создан</button>
+          <button class="btn" type="button" data-modal-target="password-recovery">Восстановление пароля</button>
+          <button class="btn" type="button" data-modal-target="password-changed">Пароль успешно изменен</button>
+          <button class="btn" type="button" data-modal-target="email-exist">Email существует</button>
+          <button class="btn" type="button" data-modal-target="email-not-exist">Email не существует</button>
+        </div>
+      </section>
+    </main>
+    <div class="modal" data-modal id="reg-successful"> 
+      <div class="modal__overlay"> </div>
+      <div class="modal__content">  
+        <button class="modal__close" type="button" data-modal-close></button>
+        <div class="modal__title">Вы успешно зарегистрированы!</div>
+        <div class="modal__text">В ближайшее время к вам на почтовый ящик <a href="#">ivanov.fedor@mail.ru</a> придет ссылка с подтверждением</div>
+      </div>
+    </div>
+    <div class="modal modal--m" id="email-exist" data-modal>
+      <div class="modal__overlay"> </div>
+      <div class="modal__content">  
+        <button class="modal__close" type="button" data-modal-close></button>
+        <div class="modal__title">Ваш E-mail связан с учетной записью</div>
+        <div class="modal__controls"> 
+          <div class="modal__btn btn btn--wide">Войти</div>
+          <div class="modal__btn btn btn--gray btn--wide">Восстановить пароль</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal id="email-not-exist"> 
+      <div class="modal__overlay"> </div>
+      <div class="modal__content">  
+        <button class="modal__close" type="button" data-modal-close></button>
+        <div class="modal__title">Данный E-mail не существует или ИНН/КПП не найдены</div>
+        <div class="modal__text">Заполните пожалуйста дополнительные данные для регистрации</div>
+      </div>
+    </div>
+    <div class="modal" data-modal id="password-changed"> 
+      <div class="modal__overlay"> </div>
+      <div class="modal__content">  
+        <button class="modal__close" type="button" data-modal-close></button>
+        <div class="modal__title">Ссылка для восстановления пароля отправлена на Ваш почтовый ящик <a href="#">ivanov.fedor@mail.ru</a></div>
+      </div>
+    </div>
+    <div class="modal" data-modal id="password-recovery"> 
+      <div class="modal__overlay"> </div>
+      <div class="modal__content">  
+        <button class="modal__close" type="button" data-modal-close></button>
+        <div class="modal__title">Пароль успешно изменен!</div>
+        <div class="modal__text">Теперь в ваш личный кабинет можно попасть только по новому паролю</div>
+      </div>
+    </div>
+    <div class="modal" data-modal id="password-set">
+      <div class="modal__overlay"> </div>
+      <div class="modal__content">  
+        <button class="modal__close" type="button" data-modal-close></button>
+        <div class="modal__title">Пароль успешно создан!</div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
