@@ -1,23 +1,11 @@
-.section {
-  padding: 140px 0;
-
-  + .section {
-    padding-top: 0;
-  }
-
-  @include media(md) {
-    padding: 80px 0;
-  }
-
-  @include media(sm) {
-    padding: 64px 0;
-  }
-
-  &__title {
-    margin-bottom: 60px;
-
-    @include media(md)  {
-      margin-bottom: 40px;
-    }
-  }
+.attention-block {
+  display: inline-block;
+  width: auto;
+  padding: 8px 8px 8px 30px;
+  position: relative;
+  background: url('../img/icons/alert-info.svg') left 6px center / 20px no-repeat;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--color-red);
+  background-color: rgba(220, 38, 38, 0.06);
 }

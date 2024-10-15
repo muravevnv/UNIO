@@ -5,6 +5,8 @@ section.auth
         img(src="./img/logo.svg", alt="")
       form.auth__form(action="#")
         .auth__form-title Авторизация поставщика
+        .auth__form-alert 
+          .attention-block Не существующая учетная запись или не верный пароль
         .auth__form-inputs
           .form-group.form-password 
             label.form-label(for="") Логин
@@ -12,7 +14,7 @@ section.auth
             span.form-error Ошибка
           .form-group.form-password(data-password="block")
             label.form-label(for="") Пароль
-            input.form-control(type="password" placeholder="Ваша Фамилия" data-password="input") 
+            input.form-control(type="password" placeholder="*******" data-password="input") 
             button(type="button" data-password="toggle").form-password__toggle
             span.form-error Ваш пароль введен неверно
         a(href="#").auth__form-password-recovery Восстановить пароль
