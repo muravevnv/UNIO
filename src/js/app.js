@@ -1,6 +1,8 @@
 
 import Swiper from "swiper";
 import { Pagination } from "swiper/modules";
+import Choices from "choices.js";
+
 import IMask from 'imask'
 
 // Слайдера банера на странице авторизации
@@ -85,4 +87,16 @@ if(passwordBlocks.length > 0) {
       }
     })
   })
+}
+
+const selects = document.querySelectorAll('select');
+
+if(selects.length > 0) {
+  selects.forEach((select) => {
+    const choices = new Choices(select, {
+      searchEnabled: false,
+      itemSelectText: '',
+    });
+  })
+
 }

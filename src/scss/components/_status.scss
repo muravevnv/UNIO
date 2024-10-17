@@ -1,0 +1,52 @@
+
+.status {
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 40px;
+
+  &--icon {
+    &::before {
+      content: '';
+      --icon-size: 18px;
+      width: var(--icon-size);
+      height: var(--icon-size);
+      mask: var(--icon) center center / contain no-repeat;
+      -webkit-mask: var(--icon) center center / contain no-repeat;
+      background-color: currentColor;
+    }
+  }
+
+  &--yellow {
+    background-color: var(--color-yellow-100);
+    color: var(--color-yellow);
+  }
+
+  &--green {
+    background-color: var(--color-green-100);
+    color: var(--color-green);
+  }
+
+  &--gray {
+    background-color: var(--color-gray-200);
+    color: var(--color-gray-100);
+  }
+
+  &--red {
+    background-color: var(--color-red-100);
+    color: var(--color-red);
+  }
+
+  &--blue {
+    background-color: var(--color-blue-100);
+    color: var(--color-blue);
+  }
+
+  &--darkblue {
+    background-color: var(--color-darkblue-100);
+    color: var(--color-darkblue);
+  }
+}

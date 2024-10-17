@@ -1,0 +1,35 @@
+.filters
+	.filters__container 
+		.filters__section
+			.filters__datepicker
+				.filter-item.filter-item--datepicker
+					label.filter-item__label(for="") Дата от
+					input.filter-item__input(type="text" placeholder="Выберите дату" data-datepicker) 
+				.filters-datepickers__decimial
+				.filter-item.filter-item--datepicker
+					label.filter-item__label(for="") Дата до
+					input.filter-item__input(type="text" placeholder="Выберите дату" data-datepicker) 
+		.filters__section
+			.filter-item 
+				label.filter-item__label(for="") Статус
+				.filter-item__select
+					select(name="")
+						option(placeholder) Выберите из списка 
+						option(value="2") новый
+						option(value="3") урегулировано без АР 
+						option(value="4") закрыт
+		.filters__section
+			.filters__checkboxes 
+				.form-checkbox 
+					input(type="checkbox", name="filters" id="filters_01")
+					label(for="filters_01") С документами
+				.form-checkbox 
+					input(type="checkbox", name="filters" id="filters_02")
+					label(for="filters_02") С рекламациями
+				.form-checkbox 
+					input(type="checkbox", name="filters" id="filters_03")
+					label(for="filters_03") С новыми сообщениями
+		.filters__searchbar
+			.searchbar
+				input.searchbar__input(type="text" placeholder="Организация покупателя")
+				button(type="button").searchbar__btn

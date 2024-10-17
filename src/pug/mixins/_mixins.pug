@@ -9,3 +9,11 @@ mixin breadcrumbs(links)
         for item in links
           li.breadcrumbs__item 
             a(href="")= item 
+mixin heading(title, links) 
+  .heading 
+    .breadcrumbs 
+      ul.breadcrumbs__container 
+        for item in links
+          li.breadcrumbs__item 
+            a(href="#")= item
+    .title.h1= title

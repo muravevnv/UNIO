@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Сотрудники</title>
+    </head>
+  <body> 
+    <main> 
+      <div class="wrapper"> 
+        <nav class="navigation"> <a class="navigation__logo" href=""> <img src="./img/logo.svg" alt=""></a>
+          <div class="navigation__section"> <a class="navigation__item" href="#" style="--icon: url('../img/icons/house.svg')">Главная</a></div>
+          <div class="navigation__section"> 
+            <div class="navigation__section-title">Рекламационно-претензионная деятельность</div><a class="navigation__item is-active" href="#" style="--icon: url('../img/icons/file.svg')">Уведомления о несоответствиях<span class="navigation__item-counter">7</span></a><a class="navigation__item" href="#" style="--icon: url('../img/icons/chat.svg')">Работы по рекламациям</a><a class="navigation__item" href="#" style="--icon: url('../img/icons/shield.svg')">Претензионная работа<span class="navigation__item-counter">1</span></a><a class="navigation__item" href="#" style="--icon: url('../img/icons/case.svg')">Процедуры 8D<span class="navigation__item-counter">1</span></a>
+          </div>
+          <div class="navigation__section"> 
+            <div class="navigation__section-title">настройки</div><a class="navigation__item" href="#" style="--icon: url('../img/icons/users.svg')">Сотрудники</a><a class="navigation__item" href="#" style="--icon: url('../img/icons/user.svg')">Профиль поставщика</a>
+          </div>
+          <div class="navigation__section navigation__section--bottom"> <a class="navigation__item" href="#" style="--icon: url('../img/icons/info.svg')">Руководство пользователя</a></div>
+        </nav>
+        <div class="content"> 
+          <div class="header"> 
+            <div class="header__container"> 
+              <div class="header__company">ООО "Поставщик оборудования"<span>ИНН 34585595959 / КПП 34585595959</span></div>
+              <div class="header__panel">
+                <div class="header__pannel-main"> 
+                  <div class="header__pannel-icon" style="--icon: url('../img/icons/user.svg')"></div>
+                  <div class="header__pannel-headmaster">Иванов Иван Иванович<span>Генеральный директор </span></div>
+                  <div class="header__pannel-arrow" style="--icon: url('../img/icons/arrow-down.svg')"> </div>
+                </div>
+                <div class="header__pannel-dropdown"> 
+                  <div class="header__panel-user-info"> </div>
+                  <div class="header__pannel-company"> </div>
+                  <button class="header__panel-logout" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="heading"> 
+              <div class="breadcrumbs"> 
+                <ul class="breadcrumbs__container"> 
+                  <li class="breadcrumbs__item"> <a href="#">Главная</a></li>
+                  <li class="breadcrumbs__item"> <a href="#">Сотрудники</a></li>
+                </ul>
+              </div>
+              <div class="title h1">Сотрудники</div>
+            </div>
+          <div class="table"> 
+            <table> 
+              <thead> 
+                <tr>
+                  <th class="table__cell table__cell--head">Логин</th>
+                  <th class="table__cell table__cell--head">Фамилия</th>
+                  <th class="table__cell table__cell--head">Имя</th>
+                  <th class="table__cell table__cell--head">Отчество</th>
+                  <th class="table__cell table__cell--head">Статус</th>
+                  <th class="table__cell table__cell--head">Роль</th>
+                  <th class="table__cell table__cell--head">Права доступа</th>
+                  <th class="table__cell table__cell--head"> </th>
+                </tr>
+              </thead>
+              <tbody> 
+                <tr>
+                  <td class="table__cell">	
+                    <div class="table__email">ivan.fedorov@mail.ru</div>
+                  </td>
+                  <td class="table__cell">Федоров</td>
+                  <td class="table__cell">Иван</td>
+                  <td class="table__cell">Сергеевич</td>
+                  <td class="table__cell"> 
+                    <div class="status status--blue status--icon" style="--icon: url('../img/icons/clock.svg')">к подтверждению</div>
+                  </td>
+                  <td class="table__cell">пользователь</td>
+                  <td class="table__cell"> 
+                    <div class="checkboxes-col">
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_01" name="check">
+                        <label for="check_01">Уведомление о несоответствии</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_02" name="check">
+                        <label for="check_02">Работа по рекламациям</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_03" name="check">
+                        <label for="check_03">Претензионная деятельность</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_04" name="check">
+                        <label for="check_04">Процедура 8D</label>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__cell"> 
+                    <div class="controls"> 
+                      <button class="btn btn--disabled btn--sm" type="button">Подтвердить</button>
+                      <button class="btn-round" type="button" style="--icon: url('../img/icons/trash.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">	
+                    <div class="table__email">konstantindzuba@mail.ru</div>
+                  </td>
+                  <td class="table__cell">Федоров</td>
+                  <td class="table__cell">Иван</td>
+                  <td class="table__cell">Сергеевич</td>
+                  <td class="table__cell"> 
+                    <div class="status status--green" style="--icon: url('../img/icons/bell.svg')">действующий</div>
+                  </td>
+                  <td class="table__cell">пользователь</td>
+                  <td class="table__cell"> 
+                    <div class="checkboxes-col">
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_05" name="check">
+                        <label for="check_05">Уведомление о несоответствии</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_06" name="check">
+                        <label for="check_06">Работа по рекламациям</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_07" name="check">
+                        <label for="check_07">Претензионная деятельность</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_08" name="check">
+                        <label for="check_08">Процедура 8D</label>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__cell"> 
+                    <div class="controls"> 
+                      <button class="btn-round" type="button" style="--icon: url('../img/icons/trash.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">	
+                    <div class="table__email">ivancheko_12@mail.ru</div>
+                  </td>
+                  <td class="table__cell">Федоров</td>
+                  <td class="table__cell">Иван</td>
+                  <td class="table__cell">Сергеевич</td>
+                  <td class="table__cell">
+                    <div class="status status--green">действующий</div>
+                  </td>
+                  <td class="table__cell">
+                    <div class="status status--yellow status--icon" style="--icon: url('../img/icons/star.svg')">ответственный</div>
+                  </td>
+                  <td class="table__cell"> 
+                    <div class="checkboxes-col">
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_09" name="check">
+                        <label for="check_09">Уведомление о несоответствии</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_10" name="check">
+                        <label for="check_10">Работа по рекламациям</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_11" name="check">
+                        <label for="check_11">Претензионная деятельность</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_12" name="check">
+                        <label for="check_12">Процедура 8D</label>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__cell"> 
+                    <div class="controls"> 
+                      <button class="btn-round" type="button" style="--icon: url('../img/icons/trash.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">	
+                    <div class="table__email">ivancheko_12@mail.ru</div>
+                  </td>
+                  <td class="table__cell">Федоров</td>
+                  <td class="table__cell">Иван</td>
+                  <td class="table__cell">Сергеевич</td>
+                  <td class="table__cell">
+                    <div class="status status--green">действующий</div>
+                  </td>
+                  <td class="table__cell">пользователь</td>
+                  <td class="table__cell"> 
+                    <div class="checkboxes-col">
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_09" name="check">
+                        <label for="check_09">Уведомление о несоответствии</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_10" name="check">
+                        <label for="check_10">Работа по рекламациям</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_11" name="check">
+                        <label for="check_11">Претензионная деятельность</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_12" name="check">
+                        <label for="check_12">Процедура 8D</label>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__cell"> 
+                    <div class="controls"> 
+                      <button class="btn-round" type="button" style="--icon: url('../img/icons/trash.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">	
+                    <div class="table__email">ivancheko_12@mail.ru</div>
+                  </td>
+                  <td class="table__cell">Федоров</td>
+                  <td class="table__cell">Иван</td>
+                  <td class="table__cell">Сергеевич</td>
+                  <td class="table__cell">
+                    <div class="status status--green">действующий</div>
+                  </td>
+                  <td class="table__cell">пользователь</td>
+                  <td class="table__cell"> 
+                    <div class="checkboxes-col">
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_09" name="check">
+                        <label for="check_09">Уведомление о несоответствии</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_10" name="check">
+                        <label for="check_10">Работа по рекламациям</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_11" name="check">
+                        <label for="check_11">Претензионная деятельность</label>
+                      </div>
+                      <div class="form-checkbox"> 
+                        <input type="checkbox" id="check_12" name="check">
+                        <label for="check_12">Процедура 8D</label>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__cell"> 
+                    <div class="controls"> 
+                      <button class="btn-round" type="button" style="--icon: url('../img/icons/trash.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination"> 
+            <div class="pagination__container"> 
+              <div class="pagination__showing"> 
+                <div class="pagination__showing-title">Показывать по</div>
+                <input class="pagination__showing-amount" type="text" value="5">
+              </div>
+              <div class="pagination__controls"> 
+                <button class="pagination__btn pagination__btn--prev" type="button" style="--icon: url('../img/icons/arrow-prev.svg')"></button><a class="pagination__item is-selected" href="#">1</a><a class="pagination__item" href="#">2</a><a class="pagination__item" href="#">3</a><a class="pagination__item" href="#">...</a><a class="pagination__item" href="#">11</a>
+                <button class="pagination__btn pagination__btn--next" type="button" style="--icon: url('../img/icons/arrow-next.svg')"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

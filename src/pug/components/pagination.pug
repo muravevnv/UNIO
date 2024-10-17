@@ -1,0 +1,13 @@
+.pagination 
+  .pagination__container 
+    .pagination__showing 
+      .pagination__showing-title Показывать по
+      input(type="text" value="5").pagination__showing-amount
+    .pagination__controls 
+      button(type="button" style="--icon: url('../img/icons/arrow-prev.svg')").pagination__btn.pagination__btn--prev
+      a(href="#").pagination__item.is-selected 1
+      a(href="#").pagination__item 2
+      a(href="#").pagination__item 3
+      a(href="#").pagination__item ...
+      a(href="#").pagination__item 11
+      button(type="button" style="--icon: url('../img/icons/arrow-next.svg')").pagination__btn.pagination__btn--next

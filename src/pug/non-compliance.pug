@@ -1,0 +1,16 @@
+doctype html
+html(lang="ru")
+	include mixins/_mixins
+	include includes/head
+	+head('Уведомление о несоответствии')
+	body 
+		main 
+			.wrapper 
+				include components/navigation
+				.content 
+					include components/header-panel
+					+heading('Уведомление о несоответствии', ['Главная', 'Уведомление о несоответствии'])
+					include sections/filters-compliance
+					include sections/table-compliance
+					include components/pagination
+		include includes/scripts

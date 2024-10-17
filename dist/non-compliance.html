@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Уведомление о несоответствии</title>
+    </head>
+  <body> 
+    <main> 
+      <div class="wrapper"> 
+        <nav class="navigation"> <a class="navigation__logo" href=""> <img src="./img/logo.svg" alt=""></a>
+          <div class="navigation__section"> <a class="navigation__item" href="#" style="--icon: url('../img/icons/house.svg')">Главная</a></div>
+          <div class="navigation__section"> 
+            <div class="navigation__section-title">Рекламационно-претензионная деятельность</div><a class="navigation__item is-active" href="#" style="--icon: url('../img/icons/file.svg')">Уведомления о несоответствиях<span class="navigation__item-counter">7</span></a><a class="navigation__item" href="#" style="--icon: url('../img/icons/chat.svg')">Работы по рекламациям</a><a class="navigation__item" href="#" style="--icon: url('../img/icons/shield.svg')">Претензионная работа<span class="navigation__item-counter">1</span></a><a class="navigation__item" href="#" style="--icon: url('../img/icons/case.svg')">Процедуры 8D<span class="navigation__item-counter">1</span></a>
+          </div>
+          <div class="navigation__section"> 
+            <div class="navigation__section-title">настройки</div><a class="navigation__item" href="#" style="--icon: url('../img/icons/users.svg')">Сотрудники</a><a class="navigation__item" href="#" style="--icon: url('../img/icons/user.svg')">Профиль поставщика</a>
+          </div>
+          <div class="navigation__section navigation__section--bottom"> <a class="navigation__item" href="#" style="--icon: url('../img/icons/info.svg')">Руководство пользователя</a></div>
+        </nav>
+        <div class="content"> 
+          <div class="header"> 
+            <div class="header__container"> 
+              <div class="header__company">ООО "Поставщик оборудования"<span>ИНН 34585595959 / КПП 34585595959</span></div>
+              <div class="header__panel">
+                <div class="header__pannel-main"> 
+                  <div class="header__pannel-icon" style="--icon: url('../img/icons/user.svg')"></div>
+                  <div class="header__pannel-headmaster">Иванов Иван Иванович<span>Генеральный директор </span></div>
+                  <div class="header__pannel-arrow" style="--icon: url('../img/icons/arrow-down.svg')"> </div>
+                </div>
+                <div class="header__pannel-dropdown"> 
+                  <div class="header__panel-user-info"> </div>
+                  <div class="header__pannel-company"> </div>
+                  <button class="header__panel-logout" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="heading"> 
+              <div class="breadcrumbs"> 
+                <ul class="breadcrumbs__container"> 
+                  <li class="breadcrumbs__item"> <a href="#">Главная</a></li>
+                  <li class="breadcrumbs__item"> <a href="#">Уведомление о несоответствии</a></li>
+                </ul>
+              </div>
+              <div class="title h1">Уведомление о несоответствии</div>
+            </div>
+          <div class="filters">
+            <div class="filters__container"> 
+              <div class="filters__section">
+                <div class="filters__datepicker">
+                  <div class="filter-item filter-item--datepicker">
+                    <label class="filter-item__label" for="">Дата от</label>
+                    <input class="filter-item__input" type="text" placeholder="Выберите дату" data-datepicker>
+                  </div>
+                  <div class="filters-datepickers__decimial"></div>
+                  <div class="filter-item filter-item--datepicker">
+                    <label class="filter-item__label" for="">Дата до</label>
+                    <input class="filter-item__input" type="text" placeholder="Выберите дату" data-datepicker>
+                  </div>
+                </div>
+              </div>
+              <div class="filters__section">
+                <div class="filter-item"> 
+                  <label class="filter-item__label" for="">Статус</label>
+                  <div class="filter-item__select">
+                    <select name="">
+                      <option placeholder>Выберите из списка </option>
+                      <option value="2">новый</option>
+                      <option value="3">урегулировано без АР </option>
+                      <option value="4">закрыт</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="filters__section">
+                <div class="filters__checkboxes"> 
+                  <div class="form-checkbox"> 
+                    <input type="checkbox" name="filters" id="filters_01">
+                    <label for="filters_01">С документами</label>
+                  </div>
+                  <div class="form-checkbox"> 
+                    <input type="checkbox" name="filters" id="filters_02">
+                    <label for="filters_02">С рекламациями</label>
+                  </div>
+                  <div class="form-checkbox"> 
+                    <input type="checkbox" name="filters" id="filters_03">
+                    <label for="filters_03">С новыми сообщениями</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filters__searchbar">
+                <div class="searchbar">
+                  <input class="searchbar__input" type="text" placeholder="Организация покупателя">
+                  <button class="searchbar__btn" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table"> 
+            <table> 
+              <thead> 
+                <tr>
+                  <th class="table__cell table__cell--head">Дата</th>
+                  <th class="table__cell table__cell--head">Номер уведомления</th>
+                  <th class="table__cell table__cell--head">Статус</th>
+                  <th class="table__cell table__cell--head">Организация покупателя</th>
+                  <th class="table__cell table__cell--head">Сумма</th>
+                  <th class="table__cell table__cell--head">Новые сообщения</th>
+                  <th class="table__cell table__cell--head">Номер рекламации</th>
+                  <th class="table__cell table__cell--head"> </th>
+                </tr>
+              </thead>
+              <tbody> 
+                <tr>
+                  <td class="table__cell">14.10.2024</td>
+                  <td class="table__cell">1</td>
+                  <td class="table__cell"> 
+                    <div class="status status--icon status--yellow" style="--icon: url('../img/icons/bell.svg')">новый</div>
+                  </td>
+                  <td class="table__cell">ООО "Поставщик оборудования"</td>
+                  <td class="table__cell">104.000 руб.</td>
+                  <td class="table__cell">3</td>
+                  <td class="table__cell">42365-Р/26</td>
+                  <td class="table__cell"> 
+                    <div class="controls"> <a class="btn-round" href="#" style="--icon: url('../img/icons/download.svg')"> </a>
+                      <button class="btn-round" type="button" style="--icon: url('../img/icons/shield.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">03.10.2024</td>
+                  <td class="table__cell">1</td>
+                  <td class="table__cell"> 
+                    <div class="status status--icon status--green" style="--icon: url('../img/icons/shield-check.svg')">урегулировано без АР</div>
+                  </td>
+                  <td class="table__cell">ООО "РЖД"</td>
+                  <td class="table__cell">1.204.000 руб.</td>
+                  <td class="table__cell">3</td>
+                  <td class="table__cell"> </td>
+                  <td class="table__cell"> 
+                    <div class="controls"> <a class="btn-round" href="#" style="--icon: url('../img/icons/download.svg')"> </a>
+                      <button class="btn-round" type="button" style="--icon: url('../img/icons/shield.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">16.09.2024</td>
+                  <td class="table__cell">3</td>
+                  <td class="table__cell"> 
+                    <div class="status status--icon status--gray" style="--icon: url('../img/icons/check.svg')">закрыт</div>
+                  </td>
+                  <td class="table__cell">ООО "ЛиАЗ"</td>
+                  <td class="table__cell">5.678.000 руб.</td>
+                  <td class="table__cell">0</td>
+                  <td class="table__cell">42365-Р/25</td>
+                  <td class="table__cell"> 
+                    <div class="controls"> <a class="btn-round" href="#" style="--icon: url('../img/icons/download.svg')"> </a>
+                      <button class="btn-round" type="button" style="--icon: url('../img/icons/shield.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">14.09.2024</td>
+                  <td class="table__cell">1</td>
+                  <td class="table__cell"> 
+                    <div class="status status--icon status--red" style="--icon: url('../img/icons/alert.svg')">просрочен</div>
+                  </td>
+                  <td class="table__cell">ООО "Поставщик оборудования"</td>
+                  <td class="table__cell">104.000 руб.</td>
+                  <td class="table__cell">3</td>
+                  <td class="table__cell">42365-Р/26</td>
+                  <td class="table__cell"> 
+                    <div class="controls"> <a class="btn-round btn-round--disabled" href="#" style="--icon: url('../img/icons/download.svg')"> </a>
+                      <button class="btn-round btn-round--disabled" type="button" style="--icon: url('../img/icons/shield.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">11.09.2024</td>
+                  <td class="table__cell">1</td>
+                  <td class="table__cell"> 
+                    <div class="status status--icon status--red" style="--icon: url('../img/icons/alert.svg')">просрочен</div>
+                  </td>
+                  <td class="table__cell">ООО "Поставщик оборудования"</td>
+                  <td class="table__cell">104.000 руб.</td>
+                  <td class="table__cell">3</td>
+                  <td class="table__cell">42365-Р/26</td>
+                  <td class="table__cell"> 
+                    <div class="controls"> <a class="btn-round btn-round--disabled" href="#" style="--icon: url('../img/icons/download.svg')"> </a>
+                      <button class="btn-round btn-round--disabled" type="button" style="--icon: url('../img/icons/shield.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">09.09.2024</td>
+                  <td class="table__cell">1</td>
+                  <td class="table__cell"> 
+                    <div class="status status--icon status--gray" style="--icon: url('../img/icons/pencil.svg')">черновик</div>
+                  </td>
+                  <td class="table__cell">ООО "Поставщик оборудования"</td>
+                  <td class="table__cell">104.000 руб.</td>
+                  <td class="table__cell">3</td>
+                  <td class="table__cell">42365-Р/26</td>
+                  <td class="table__cell"> 
+                    <div class="controls"> <a class="btn-round btn-round--disabled" href="#" style="--icon: url('../img/icons/download.svg')"> </a>
+                      <button class="btn-round btn-round--disabled" type="button" style="--icon: url('../img/icons/shield.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">09.09.2024</td>
+                  <td class="table__cell">1</td>
+                  <td class="table__cell"> 
+                    <div class="status status--icon status--blue" style="--icon: url('../img/icons/clock.svg')">в работе</div>
+                  </td>
+                  <td class="table__cell">ООО "Поставщик оборудования"</td>
+                  <td class="table__cell">104.000 руб.</td>
+                  <td class="table__cell">3</td>
+                  <td class="table__cell">42365-Р/26</td>
+                  <td class="table__cell"> 
+                    <div class="controls"> <a class="btn-round btn-round--disabled" href="#" style="--icon: url('../img/icons/download.svg')"> </a>
+                      <button class="btn-round btn-round--disabled" type="button" style="--icon: url('../img/icons/shield.svg')"> </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">08.09.2024</td>
+                  <td class="table__cell">1</td>
+                  <td class="table__cell"> 
+                    <div class="status status--icon status--darkblue" style="--icon: url('../img/icons/mail.svg')">отправлен</div>
+                  </td>
+                  <td class="table__cell">ООО "Поставщик оборудования"</td>
+                  <td class="table__cell">104.000 руб.</td>
+                  <td class="table__cell">3</td>
+                  <td class="table__cell">42365-Р/26</td>
+                  <td class="table__cell"> 
+                    <div class="controls"> <a class="btn-round btn-round--disabled" href="#" style="--icon: url('../img/icons/download.svg')"> </a>
+                      <button class="btn-round btn-round--disabled" type="button" style="--icon: url('../img/icons/shield.svg')"></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination"> 
+            <div class="pagination__container"> 
+              <div class="pagination__showing"> 
+                <div class="pagination__showing-title">Показывать по</div>
+                <input class="pagination__showing-amount" type="text" value="5">
+              </div>
+              <div class="pagination__controls"> 
+                <button class="pagination__btn pagination__btn--prev" type="button" style="--icon: url('../img/icons/arrow-prev.svg')"></button><a class="pagination__item is-selected" href="#">1</a><a class="pagination__item" href="#">2</a><a class="pagination__item" href="#">3</a><a class="pagination__item" href="#">...</a><a class="pagination__item" href="#">11</a>
+                <button class="pagination__btn pagination__btn--next" type="button" style="--icon: url('../img/icons/arrow-next.svg')"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

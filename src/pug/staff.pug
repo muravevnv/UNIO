@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru")
+	include mixins/_mixins
+	include includes/head
+	+head('Сотрудники')
+	body 
+		main 
+			.wrapper 
+				include components/navigation
+				.content 
+					include components/header-panel
+					+heading('Сотрудники', ['Главная', 'Сотрудники'])
+					include sections/table-staff
+					include components/pagination

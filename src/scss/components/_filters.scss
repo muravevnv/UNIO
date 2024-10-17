@@ -1,0 +1,140 @@
+.filters {
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    gap: 28px;
+  }
+
+  &__datepicker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__checkboxes {
+    display: flex;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    padding-bottom: 15px;
+  }
+
+  &__searchbar {
+    width: 226px;
+    margin-left: auto;
+  }
+}
+
+.filter-item {
+
+  &--datepicker {
+    width: 134px;
+
+    .filter-item__input {
+      padding-right: 28px;
+      background: url('../img/icons/calendar.svg') right 12px center / 16px no-repeat;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    height: 45px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid cl(border);
+    color: var(--color-gray-400);
+    font-size: 12px;
+    line-height: 1;
+    padding: 15px 12px;
+    border-radius: 4px;
+  }
+
+  &__select {
+    .choices {
+      min-width: 165px;
+    }
+
+    .choices__item {
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .choices__list--single {
+      padding: 0;
+    }
+
+    .choices__inner {
+      min-height: 45px;
+      height: 45px;
+      padding: 15px 37px 15px 12px ;
+      border: 1px solid cl(border);
+      background-color: transparent;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+    }
+
+    .choices[data-type*=select-one] .choices__inner {
+      padding-bottom: 15px;
+    }
+
+    .choices__list--dropdown .choices__item--selectable {
+      padding-right: 12px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .choices__list--dropdown .choices__placeholder {
+      display: none;
+    }
+
+    .choices[data-type*=select-one]:after {
+      width: 15px;
+      height: 15px;
+      border: none;
+      background: url('../img/icons/arrow-select.svg') center / contain no-repeat;
+      margin-top: -7px;
+    }
+  }
+}
+
+.searchbar {
+  position: relative;
+  width: 100%;
+
+  &__input {
+    height: 45px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid cl(border);
+    color: var(--color-gray-400);
+    font-size: 12px;
+    line-height: 1;
+    padding: 15px 12px;
+    border-radius: 4px;
+  }
+
+  &__btn {
+    --size: 35px;
+    width: var(--size);
+    height: var(--size);
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 0;
+    border: none;
+    outline: none;
+    background: url('../img/icons/search.svg') center / 15px no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
