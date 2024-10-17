@@ -19,6 +19,7 @@
           <button class="btn" type="button" data-modal-target="password-changed">Пароль успешно изменен</button>
           <button class="btn" type="button" data-modal-target="email-exist">Email существует</button>
           <button class="btn" type="button" data-modal-target="email-not-exist">Email не существует</button>
+          <button class="btn" type="button" data-modal-target="remove-user">Удалить пользователя</button>
         </div>
       </section>
     </main>
@@ -36,8 +37,8 @@
         <button class="modal__close" type="button" data-modal-close></button>
         <div class="modal__title">Ваш E-mail связан с учетной записью</div>
         <div class="modal__controls"> 
-          <div class="modal__btn btn btn--wide">Войти</div>
-          <div class="modal__btn btn btn--gray btn--wide">Восстановить пароль</div>
+          <button class="modal__btn btn btn--wide" type="button">Войти</button>
+          <button class="modal__btn btn btn--gray btn--wide" type="button">Восстановить пароль</button>
         </div>
       </div>
     </div>
@@ -69,6 +70,17 @@
       <div class="modal__content">  
         <button class="modal__close" type="button" data-modal-close></button>
         <div class="modal__title">Пароль успешно создан!</div>
+      </div>
+    </div>
+    <div class="modal modal--m" id="remove-user" data-modal>
+      <div class="modal__overlay"> </div>
+      <div class="modal__content">  
+        <button class="modal__close" type="button" data-modal-close></button>
+        <div class="modal__title">Вы действительно хотите удалить пользователя <a href="#">Абрамов И.А.</a>?</div>
+        <div class="modal__controls"> 
+          <button class="modal__btn btn btn--wide" type="button">Удалить</button>
+          <button class="modal__btn btn btn--gray btn--wide" type="button">Отмена</button>
+        </div>
       </div>
     </div>
     <script src="js/app.min.js"></script>

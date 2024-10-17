@@ -2,7 +2,7 @@
 import Swiper from "swiper";
 import { Pagination } from "swiper/modules";
 import Choices from "choices.js";
-
+import tippy from 'tippy.js';
 import IMask from 'imask'
 
 // Слайдера банера на странице авторизации
@@ -98,5 +98,17 @@ if(selects.length > 0) {
       itemSelectText: '',
     });
   })
+}
 
+const tooltips = document.querySelectorAll('[data-tippy]');
+if(tooltips.length > 0) {
+  tooltips.forEach((tooltip) => {
+    const toolTipContent = tooltip.dataset.content;
+    tippy(tooltip, {
+      theme: 'custom',
+      content: toolTipContent,
+      placement: 'bottom-start',
+      arrow: false,
+    });
+  })
 }

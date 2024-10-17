@@ -19,7 +19,8 @@
     "gulp-fonter": "^0.3.0",
     "gulp-ttf2woff2": "^4.0.1",
     "imask": "^7.6.1",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "tippy.js": "^6.2.5"
   },
   "devDependencies": {
     "browser-sync": "^3.0.2",
