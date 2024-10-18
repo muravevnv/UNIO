@@ -3,6 +3,7 @@ import Swiper from "swiper";
 import { Pagination } from "swiper/modules";
 import Choices from "choices.js";
 import tippy from 'tippy.js';
+import AirDatepicker from 'air-datepicker';
 import IMask from 'imask'
 
 // Слайдера банера на странице авторизации
@@ -109,6 +110,15 @@ if(tooltips.length > 0) {
       content: toolTipContent,
       placement: 'bottom-start',
       arrow: false,
+    });
+  })
+}
+
+const datepicker = document.querySelectorAll('[data-datepicker]');
+if(datepicker.length > 0) {
+  datepicker.forEach((item) => {
+    const datepicker = new AirDatepicker(item, {
+      clearButton: true,
     });
   })
 }
