@@ -276,6 +276,10 @@
     &--head {
       color: var(--color-gray-100);
     }
+
+    &--icon {
+      width: 100px;
+    }
   }
 
   tbody {
@@ -305,6 +309,10 @@
       }
     }
   }
+
+  &__icon {
+
+  }
 }
 
 .controls {
@@ -312,4 +320,14 @@
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
+}
+
+
+.icon {
+  --icon-size: 20px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  mask: var(--icon) center center / contain no-repeat;
+  -webkit-mask: var(--icon) center center / contain no-repeat;
+  background-color: currentColor;
 }

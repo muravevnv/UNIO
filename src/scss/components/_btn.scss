@@ -48,6 +48,13 @@
     border-radius: 4px;
   }
 
+  &--m {
+    padding: 12px 20px;
+    line-height: 1.4;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
   &--disabled {
     background-color: var(--color-disabled);
     border-color: var(--color-disabled);

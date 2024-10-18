@@ -1949,6 +1949,8 @@ button.swiper-pagination-bullet {
   --color-red--rgb: 220, 38, 38;
   --color-red-100: #FCDEDE;
   --color-red-100--rgb: 252, 222, 222;
+  --color-red-200: #EE9393;
+  --color-red-200--rgb: 238, 147, 147;
   --color-blue: #17A1E0;
   --color-blue--rgb: 23, 161, 224;
   --color-blue-100: #DEF2FC;
@@ -2694,6 +2696,10 @@ p {
   color: var(--color-gray-100);
 }
 
+.table__cell--icon {
+  width: 100px;
+}
+
 .table tbody tr:last-child .table__cell {
   border-bottom: 0;
 }
@@ -2716,6 +2722,15 @@ p {
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
+}
+
+.icon {
+  --icon-size: 20px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  mask: var(--icon) center center/contain no-repeat;
+  -webkit-mask: var(--icon) center center/contain no-repeat;
+  background-color: currentColor;
 }
 
 .btn {
@@ -2755,6 +2770,13 @@ p {
   padding: 10px 16px;
   font-size: 14px;
   border-radius: 4px;
+}
+
+.btn--m {
+  padding: 12px 20px;
+  line-height: 1.4;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .btn--disabled {
@@ -2960,8 +2982,15 @@ p {
 }
 
 .filters__searchbar {
-  width: 226px;
+  width: 200px;
+}
+
+.filters__controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   margin-left: auto;
+  padding-bottom: 4px;
 }
 
 .filter-item--datepicker {

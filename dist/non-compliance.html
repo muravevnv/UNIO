@@ -92,6 +92,10 @@
                   </div>
                 </div>
               </div>
+              <div class="filters__controls"> 
+                <button class="btn btn--sm filters__apply" type="button">Применить</button>
+                <button class="btn btn--gray btn--sm filters__reset" type="button">Сбросить</button>
+              </div>
               <div class="filters__searchbar">
                 <div class="searchbar">
                   <input class="searchbar__input" type="text" placeholder="Организация покупателя">
@@ -109,7 +113,9 @@
                   <th class="table__cell table__cell--head">Статус</th>
                   <th class="table__cell table__cell--head">Организация покупателя</th>
                   <th class="table__cell table__cell--head">Сумма</th>
-                  <th class="table__cell table__cell--head">Новые сообщения</th>
+                  <th class="table__cell table__cell--head table__cell--icon">
+                    <div class="icon" style="--icon: url('../img/icons/mail-fill.svg')"></div>
+                  </th>
                   <th class="table__cell table__cell--head">Номер рекламации</th>
                   <th class="table__cell table__cell--head"> </th>
                 </tr>

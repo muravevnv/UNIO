@@ -21,8 +21,15 @@
   }
 
   &__searchbar {
-    width: 226px;
+    width: 200px;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
     margin-left: auto;
+    padding-bottom: 4px;
   }
 }
 
