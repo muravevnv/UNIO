@@ -1,0 +1,69 @@
+.popup {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  &__inner {
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    inset: 0 0 0 auto;
+    z-index: 3;
+  }
+
+  &__close {
+
+    padding: 26px;
+    background-color: var(--color-blue);
+    border-radius: 54px 0 0 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: -74px;
+    transition: 0.25s ease-in;
+
+    &::before {
+      --size: 22px;
+      content: '';
+      display: block;
+      width: var(--size);
+      height: var(--size);
+      background-color: cl(whte);
+      mask: url('../img/icons/close.svg') center center / contain no-repeat;
+      -webkit-mask: url('../img/icons/close.svg') center center / contain no-repeat;
+
+    }
+
+    @media(any-hover: hover) {
+
+      &:hover {
+        background-color: var(--color-primary);
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-gray-200);
+    padding: 20px;
+  }
+}

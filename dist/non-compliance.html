@@ -25,16 +25,29 @@
           <div class="header"> 
             <div class="header__container"> 
               <div class="header__company">ООО "Поставщик оборудования"<span>ИНН 34585595959 / КПП 34585595959</span></div>
-              <div class="header__panel">
-                <div class="header__pannel-main"> 
-                  <div class="header__pannel-icon" style="--icon: url('../img/icons/user.svg')"></div>
-                  <div class="header__pannel-headmaster">Иванов Иван Иванович<span>Генеральный директор </span></div>
-                  <div class="header__pannel-arrow" style="--icon: url('../img/icons/arrow-down.svg')"> </div>
+              <div class="header__profile">
+                <div class="header__profile-main"> 
+                  <div class="header__profile-icon" style="--icon: url('../img/icons/user.svg')"></div>
+                  <div class="header__profile-headmaster">Иванов Иван Иванович<span>Генеральный директор </span></div>
+                  <div class="header__profile-arrow" style="--icon: url('../img/icons/arrow-down.svg')"> </div>
                 </div>
-                <div class="header__pannel-dropdown"> 
-                  <div class="header__panel-user-info"> </div>
-                  <div class="header__pannel-company"> </div>
-                  <button class="header__panel-logout" type="button"></button>
+                <div class="header__profile-dropdown"> 
+                  <div class="header__profile-user">
+                    <div class="header__panel-user-email">ivanov.ivan@mail.ru</div>
+                    <button class="header__panel-user-change-password link link--dashed link--blue" type="button">сменить пароль</button>
+                  </div>
+                  <div class="header__profile-company"> 
+                    <div class="header__profile-company-title">Компания</div>
+                    <div class="header__profile-company-name">ООО "Поставщик оборудования"</div>
+                    <div class="header__profile-company-requisites"> 
+                      <div class="header__profile-company-requisite">ИНН: 42020289085</div>
+                      <div class="header__profile-company-requisite">КПП: 42020289085</div>
+                    </div>
+                  </div>
+                  <div class="header__profile-controls"> 
+                    <button class="header__profile-change btn btn--wide btn--sm" type="button">Изменить информацию</button>
+                    <button class="header__profile-logout" type="button" style="--icon: url('../img/icons/logout.svg')">Выйти из профиля</button>
+                  </div>
                 </div>
               </div>
             </div>

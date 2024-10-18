@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru")
+	include mixins/_mixins
+	include includes/head
+	+head('Уведомление о несоответствии')
+	body 
+		main 
+			.wrapper 
+				include components/navigation
+				.content 
+					include components/header-panel
+					+heading('Профиль поставщика', ['Главная', 'Профиль поставщикаи'])
+					include sections/supplier-profile
+		include includes/scripts

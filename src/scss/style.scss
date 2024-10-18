@@ -19,9 +19,12 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/modal';
+@import 'components/popup';
 @import 'components/filters';
 @import 'components/status';
 @import 'components/pagination';
 
 //Sections
 @import 'sections/auth';
+@import 'sections/user-profile';
+@import 'sections/supplier-profile';

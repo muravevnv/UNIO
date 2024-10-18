@@ -1,0 +1,121 @@
+.supplier-profile {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: flex-start;
+  gap: 20px;
+
+  &__block {
+    padding: 30px;
+    background-color: var(--color-whte);
+    border-radius: 20px;
+
+    &-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--color-gray);
+    }
+
+    &-title {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__section {
+    &:not(:last-of-type) {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--color-gray);
+    }
+  }
+
+  &__inputs {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__production {
+
+    &-title {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &.is-open {
+
+        .supplier-profile__production-item {
+          display: block;
+        }
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 16px;
+      display: none;
+
+      &:nth-of-type(-n + 4) {
+        display: block;
+      }
+
+      span {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+
+    &-more {
+      margin-top: 20px;
+
+      &-hide {
+        display: none;
+      }
+
+      &.is-active {
+
+        .supplier-profile__production-more-hide {
+          display: block;
+        }
+
+        .supplier-profile__production-more-show {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__requisite {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+  }
+
+  &__buyers {
+    font-size: 18px;
+
+    &-title {
+      margin-bottom: 20px;
+    }
+
+    &-item {
+      padding: 15px 10px;
+      font-size: 20px;
+
+      &:nth-of-type(odd) {
+        background-color: rgba(231, 235, 237, 0.4);
+      }
+    }
+  }
+}

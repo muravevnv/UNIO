@@ -2,13 +2,22 @@
   .header__container 
     .header__company ООО "Поставщик оборудования"
       span ИНН 34585595959 / КПП 34585595959
-    .header__panel
-      .header__pannel-main 
-        .header__pannel-icon(style="--icon: url('../img/icons/user.svg')")
-        .header__pannel-headmaster Иванов Иван Иванович
+    .header__profile
+      .header__profile-main 
+        .header__profile-icon(style="--icon: url('../img/icons/user.svg')")
+        .header__profile-headmaster Иванов Иван Иванович
           span Генеральный директор 
-        .header__pannel-arrow(style="--icon: url('../img/icons/arrow-down.svg')") 
-      .header__pannel-dropdown 
-        .header__panel-user-info 
-        .header__pannel-company 
-        button(type="button").header__panel-logout
+        .header__profile-arrow(style="--icon: url('../img/icons/arrow-down.svg')") 
+      .header__profile-dropdown 
+        .header__profile-user
+          .header__panel-user-email ivanov.ivan@mail.ru
+          button(type="button").header__panel-user-change-password.link.link--dashed.link--blue сменить пароль
+        .header__profile-company 
+          .header__profile-company-title Компания
+          .header__profile-company-name ООО "Поставщик оборудования"
+          .header__profile-company-requisites 
+            .header__profile-company-requisite ИНН: 42020289085
+            .header__profile-company-requisite КПП: 42020289085
+        .header__profile-controls 
+          button(type="button").header__profile-change.btn.btn--wide.btn--sm Изменить информацию
+          button(type="button" style="--icon: url('../img/icons/logout.svg')").header__profile-logout Выйти из профиля

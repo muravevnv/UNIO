@@ -42,7 +42,7 @@ if(modalBtns.length > 0) {
 
   document.addEventListener('click', (e) => {
     console.log(e.target)
-    if(e.target.classList.contains('modal__overlay')) {
+    if(e.target.classList.contains('overlay')) {
       const closestModal = e.target.closest('[data-modal]');
       closeModal(closestModal);
     }

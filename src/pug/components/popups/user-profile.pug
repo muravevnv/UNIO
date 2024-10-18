@@ -1,0 +1,53 @@
+.popup(id="profile-user" data-modal) 
+  .popup__overlay.overlay
+  .popup__inner 
+    button(type="button" style="--icon: url('../img/icons/close.svg')" data-modal-close).popup__close 
+    .popup__content
+      .user-profile 
+        .user-profile__heading.heading 
+          .user-profile__title.title.h1 Профиль пользователя
+          button(type="button" style="--icon: url('../img/icons/logout.svg')").user-profile__logout Выйти из профиля
+        .user-profile__content 
+          .user-profile__block
+            .user-profile__block-head 
+              .user-profile__block-title Компания
+            .user-profile__block-content
+              .user-profile__block-company ООО "Поставщик оборудования"
+              .user-profile__block-requisites 
+                .user-profile__block-requisite 
+                  span ИНН: 
+                  | 42020289085
+                .user-profile__block-requisite 
+                  span КПП: 
+                  | 42020289085
+          .user-profile__block
+            .user-profile__block-head 
+              .user-profile__block-title Должность
+            .user-profile__block-content
+              .user-profile__block-text Генеральный директор
+          .user-profile__block.user-profile__block--wide
+            .user-profile__block-head 
+              .user-profile__block-title Личные данные
+              .user-profile__block-controls 
+                .change-profile
+                  //- button(type="button").change-profile__btn.link.link--blue.link--dashed Изменить
+                  button(type="button").change-profile__apply.btn.btn--sm Сохранить
+                  button(type="button").change-profile__cancel.btn.btn--sm.btn--secondary Отменить
+            .user-profile__block-content
+              .user-profile__block-inputs 
+                .form-group 
+                  label.form-label Фамилия
+                  input.form-control(type="text" placeholder="Фамилия" value="Иванов")
+                .form-group 
+                  label.form-label Имя
+                  input.form-control(type="text" placeholder="Имя" value="Иван")
+                .form-group 
+                  label.form-label Отчество
+                  input.form-control(type="text" placeholder="Отчество" value="Иванович")
+                .form-group 
+                  label.form-label E-mail
+                  input.form-control(type="email" placeholder="E-mail" value="ivan.fedorov@mail.ru")
+                .form-group.form-password(data-password="block") 
+                  label.form-label(for="") Пароль
+                  input.form-control(type="password" placeholder="*******" data-password="input" value="12345") 
+                  button(type="button" data-password="toggle").form-password__toggle

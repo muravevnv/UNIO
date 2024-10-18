@@ -1,5 +1,5 @@
 section.modals 
-  .container 
+  .container(style="max-width: 600px; display: flex; gap: 16px;flex-wrap: wrap; align-items: center; margin: 0;")
     button(type="button" data-modal-target="reg-successful").btn Успешная регистация
     button(type="button" data-modal-target="password-set").btn Пароль успешно создан
     button(type="button" data-modal-target="password-recovery").btn Восстановление пароля
@@ -7,3 +7,4 @@ section.modals
     button(type="button" data-modal-target="email-exist").btn Email существует
     button(type="button" data-modal-target="email-not-exist").btn Email не существует
     button(type="button" data-modal-target="remove-user").btn Удалить пользователя
+    button(type="button" data-modal-target="profile-user").btn Профиль пользователя
