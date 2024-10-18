@@ -2705,40 +2705,17 @@ p {
   text-overflow: ellipsis;
 }
 
+.table__link {
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: 0.25s ease-in-out;
+}
+
 .controls {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-}
-
-.btn-round {
-  --size: 37px;
-  --size-icon: 15px;
-  width: var(--size);
-  height: var(--size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: 1px solid var(--color-gray-100);
-  color: var(--color-gray-100);
-  border-radius: 50%;
-}
-
-.btn-round--disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-.btn-round::before {
-  display: block;
-  content: "";
-  width: var(--size-icon);
-  height: var(--size-icon);
-  mask: var(--icon) center center/contain no-repeat;
-  -webkit-mask: var(--icon) center center/contain no-repeat;
-  background-color: currentColor;
 }
 
 .btn {
@@ -2785,6 +2762,36 @@ p {
   border-color: var(--color-disabled);
   color: #DBE1E8;
   pointer-events: none;
+}
+
+.btn-round {
+  --size: 37px;
+  --size-icon: 15px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid var(--color-gray-100);
+  color: var(--color-gray-100);
+  border-radius: 50%;
+  transition: 0.25s ease-in-out;
+}
+
+.btn-round--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn-round::before {
+  display: block;
+  content: "";
+  width: var(--size-icon);
+  height: var(--size-icon);
+  mask: var(--icon) center center/contain no-repeat;
+  -webkit-mask: var(--icon) center center/contain no-repeat;
+  background-color: currentColor;
 }
 
 .footer {
@@ -3445,6 +3452,10 @@ p {
 }
 
 @media (any-hover: hover) {
+  .table__link:hover {
+    border-color: currentColor;
+  }
+
   .btn:hover {
     background-color: var(--color-primary-hover);
     border-color: var(--color-primary-hover);
@@ -3453,6 +3464,11 @@ p {
 
   .btn:hover svg {
     color: var(--color-whte);
+  }
+
+  .btn-round:hover {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
   }
 
   .social-item:hover {

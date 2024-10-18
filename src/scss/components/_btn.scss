@@ -55,3 +55,42 @@
     pointer-events: none;
   }
 }
+
+
+.btn-round {
+  --size: 37px;
+  --size-icon: 15px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid var(--color-gray-100);
+  color: var(--color-gray-100);
+  border-radius: 50%;
+  transition: 0.25s ease-in-out;
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    width: var(--size-icon);
+    height: var(--size-icon);
+    mask: var(--icon) center center / contain no-repeat;
+    -webkit-mask: var(--icon) center center / contain no-repeat;
+    background-color: currentColor;
+  }
+
+  @media(any-hover: hover) {
+
+    &:hover {
+      border-color: var(--color-blue);
+      color: var(--color-blue);
+    }
+  }
+}
