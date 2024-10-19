@@ -122,3 +122,15 @@ if(datepicker.length > 0) {
     });
   })
 }
+
+const hiddenContent = document.querySelector('[data-show="content"]');
+
+if(hiddenContent) {
+
+  const hiddenContentBtn = document.querySelector('[data-show="btn"]');
+
+  hiddenContentBtn.addEventListener('click', () => {
+    hiddenContentBtn.classList.toggle('is-active');
+    hiddenContent.classList.toggle('is-open');
+  })
+}

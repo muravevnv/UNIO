@@ -6,7 +6,7 @@
       .supplier-profile__section
         .supplier-profile__production 
           .supplier-profile__production-title Поставляемая продукция: 
-          .supplier-profile__production-list
+          .supplier-profile__production-list(data-show="content")
             .supplier-profile__production-item
               span 1. Промышленные товары:
               | Оборудование и машины / Запчасти и комплектующие / Инструменты и расходные материалы
@@ -49,7 +49,7 @@
             .supplier-profile__production-item
               span 12. Промышленные товары:
               | Оборудование и машины / Инструменты и расходные материалы
-          button(type="button").supplier-profile__production-more.link.link--dashed.link--blue 
+          button(type="button").supplier-profile__production-more.link.link--dashed.link--blue(data-show="btn")
             span.supplier-profile__production-more-show Показать все
             span.supplier-profile__production-more-hide Скрыть
       .supplier-profile__section
