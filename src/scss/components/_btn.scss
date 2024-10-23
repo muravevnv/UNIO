@@ -129,3 +129,31 @@
     color: var(--color-blue);
   }
 }
+
+.btn-email {
+  --size: 18px;
+  --size-icon: 18px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--color-primary);
+  transition: 0.25s ease-in-out;
+
+  &--disabled {
+    pointer-events: none;
+    color: cl(gray-300)
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    width: var(--size-icon);
+    height: var(--size-icon);
+    mask: var(--icon) center center / contain no-repeat;
+    -webkit-mask: var(--icon) center center / contain no-repeat;
+    background-color: currentColor;
+  }
+}

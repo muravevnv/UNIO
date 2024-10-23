@@ -1,0 +1,50 @@
+.select {
+  .choices {
+
+  }
+
+  .choices__item {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .choices__list--single {
+    padding: 0;
+  }
+
+  .choices__inner {
+    min-height: 33px;
+    height: 33px;
+    padding: 8px 24px 8px 10px;
+    border: 1px solid cl(border);
+    background-color: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+
+  .choices[data-type*=select-one] .choices__inner {
+    padding-bottom: 8px;
+  }
+
+  .choices__list--dropdown .choices__item--selectable {
+    padding-right: 12px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .choices__list--dropdown .choices__placeholder {
+    display: none;
+  }
+
+  .choices[data-type*=select-one]:after {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background: url('../img/icons/arrow-select.svg') center / contain no-repeat;
+    margin-top: -7px;
+    right: 8px;
+  }
+}

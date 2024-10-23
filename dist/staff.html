@@ -271,7 +271,13 @@
             <div class="pagination__container"> 
               <div class="pagination__showing"> 
                 <div class="pagination__showing-title">Показывать по</div>
-                <input class="pagination__showing-amount" type="text" value="5">
+                <div class="pagination__showing-amount select">
+                  <select name="">
+                    <option value="10">10</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                </div>
               </div>
               <div class="pagination__controls"> 
                 <button class="pagination__btn pagination__btn--prev" type="button" style="--icon: url('../img/icons/arrow-prev.svg')"></button><a class="pagination__item is-selected" href="#">1</a><a class="pagination__item" href="#">2</a><a class="pagination__item" href="#">3</a><a class="pagination__item" href="#">...</a><a class="pagination__item" href="#">11</a>

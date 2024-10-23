@@ -2,7 +2,11 @@
   .pagination__container 
     .pagination__showing 
       .pagination__showing-title Показывать по
-      input(type="text" value="5").pagination__showing-amount
+      .pagination__showing-amount.select
+        select(name="")
+          option(value="10") 10
+          option(value="50") 50
+          option(value="100") 100
     .pagination__controls 
       button(type="button" style="--icon: url('../img/icons/arrow-prev.svg')").pagination__btn.pagination__btn--prev
       a(href="#").pagination__item.is-selected 1

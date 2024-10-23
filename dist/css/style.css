@@ -2795,7 +2795,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 30px;
 }
 
 .icon {
@@ -2909,6 +2909,34 @@ p {
 
 .link--blue {
   color: var(--color-blue);
+}
+
+.btn-email {
+  --size: 18px;
+  --size-icon: 18px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--color-primary);
+  transition: 0.25s ease-in-out;
+}
+
+.btn-email--disabled {
+  pointer-events: none;
+  color: var(--color-gray-300);
+}
+
+.btn-email::before {
+  display: block;
+  content: "";
+  width: var(--size-icon);
+  height: var(--size-icon);
+  mask: var(--icon) center center/contain no-repeat;
+  -webkit-mask: var(--icon) center center/contain no-repeat;
+  background-color: currentColor;
 }
 
 .footer {
@@ -3257,6 +3285,51 @@ p {
   right: 5px;
 }
 
+.select .choices__item {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.select .choices__list--single {
+  padding: 0;
+}
+
+.select .choices__inner {
+  min-height: 33px;
+  height: 33px;
+  padding: 8px 24px 8px 10px;
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.select .choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 8px;
+}
+
+.select .choices__list--dropdown .choices__item--selectable {
+  padding-right: 12px;
+}
+
+.select .choices__list--dropdown .choices__item--selectable::after {
+  display: none;
+}
+
+.select .choices__list--dropdown .choices__placeholder {
+  display: none;
+}
+
+.select .choices[data-type*=select-one]:after {
+  width: 14px;
+  height: 14px;
+  border: none;
+  background: url("../img/icons/arrow-select.svg") center/contain no-repeat;
+  margin-top: -7px;
+  right: 8px;
+}
+
 .status {
   display: inline-flex;
   width: auto;
@@ -3319,18 +3392,6 @@ p {
   align-items: center;
   gap: 10px;
   color: var(--color-gray-450);
-}
-
-.pagination__showing-amount {
-  width: 35px;
-  height: 33px;
-  border: 1px solid var(--color-gray-300);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 4px;
 }
 
 .pagination__controls {
